@@ -36,6 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\CLI.cs" />
+    <Compile Include="Core\Manager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

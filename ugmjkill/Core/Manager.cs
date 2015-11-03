@@ -8,12 +8,12 @@ namespace ugmjkill.Core
 {
     public class Manager
     {
-        public static bool crearArbol(bool crear)
+        public void  crearArbol(bool crear)
         {
-            string cPagina = @"C:\Users\Public\Pagina";
-            string cTemplate = @"C:\Users\Public\Pagina\Template";
-            string cCSS = @"C:\Users\Public\Pagina\CSS";
-            string cPosts = @"C:\Users\Public\Pagina\POSTS";
+            string cPagina = "Pagina";
+            string cTemplate = "Pagina\\Template";
+            string cCSS = "Pagina\\CSS";
+            string cPosts = "Pagina\\POSTS";
 
             // generar junto al .exe
 
@@ -24,9 +24,9 @@ namespace ugmjkill.Core
                 System.IO.Directory.CreateDirectory(cCSS);
                 System.IO.Directory.CreateDirectory(cPosts);
 
-                var tHeater = "C:\\Users\\Public\\Pagina\\Template\\Heater.html";
-                var tMainContent = "C:\\Users\\Public\\Pagina\\Template\\MainContent.html";
-                var tFooter = "C:\\Users\\Public\\Pagina\\Template\\Footer.html";
+                var tHeater = "Pagina\\Template\\Heater.html";
+                var tMainContent = "Pagina\\Template\\MainContent.html";
+                var tFooter = "Pagina\\Template\\Footer.html";
 
                 // crear el fichero
                 using (var fileStream = System.IO.File.Create(tHeater))
@@ -46,8 +46,6 @@ namespace ugmjkill.Core
                     fileStream.Flush();
                 }
             }
-
-            return false;
         }
     }
 }
