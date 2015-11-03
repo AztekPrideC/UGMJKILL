@@ -24,9 +24,9 @@ namespace ugmjkill.Core
                 System.IO.Directory.CreateDirectory(cCSS);
                 System.IO.Directory.CreateDirectory(cPosts);
 
-                var tHeater = "Pagina\\Template\\Heater.html";
-                var tMainContent = "Pagina\\Template\\MainContent.html";
-                var tFooter = "Pagina\\Template\\Footer.html";
+                var tHeater = "Pagina\\Template\\Heater.tpl";
+                var tMainContent = "Pagina\\Template\\MainContent.tpl";
+                var tFooter = "Pagina\\Template\\Footer.tpl";
 
                 // crear el fichero
                 using (var fileStream = System.IO.File.Create(tHeater))
