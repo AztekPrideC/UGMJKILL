@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ugmjkill.Core
+namespace UGMJKill.Core.Lib
 {
-    public class Manager
+    public static class Manager
     {
-        public void  crearArbol(bool crear)
+        public static void  crearArbol()
         {
             string cPagina = "Pagina";
             string cTemplate = "Pagina\\Template";
@@ -17,7 +17,7 @@ namespace ugmjkill.Core
 
             // generar junto al .exe
 
-            if (crear == true)
+            if (true)
             {
                 System.IO.Directory.CreateDirectory(cPagina);
                 System.IO.Directory.CreateDirectory(cTemplate);

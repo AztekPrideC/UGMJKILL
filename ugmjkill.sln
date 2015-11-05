@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Windows Desktop
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ugmjkill", "ugmjkill\ugmjkill.csproj", "{7CFF9818-1991-4DA4-99E9-E3DB314C309D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UGMJKill.Core", "ugmjkill\UGMJKill.Core.csproj", "{7CFF9818-1991-4DA4-99E9-E3DB314C309D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D02835D9-CBF1-4B9B-B0DF-0EE26EFB6FCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UGMJKill.Core.Tests", "UGMJKill.Core.Tests\UGMJKill.Core.Tests.csproj", "{909F8741-3EF3-4CAB-A97F-BDD21A8650F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UGMJKill.Core.Lib", "UGMJKill.Core.Lib\UGMJKill.Core.Lib.csproj", "{B8301AC4-C673-4ED0-95CA-606D5B057874}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +21,21 @@ Global
 		{7CFF9818-1991-4DA4-99E9-E3DB314C309D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CFF9818-1991-4DA4-99E9-E3DB314C309D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CFF9818-1991-4DA4-99E9-E3DB314C309D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909F8741-3EF3-4CAB-A97F-BDD21A8650F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909F8741-3EF3-4CAB-A97F-BDD21A8650F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909F8741-3EF3-4CAB-A97F-BDD21A8650F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909F8741-3EF3-4CAB-A97F-BDD21A8650F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8301AC4-C673-4ED0-95CA-606D5B057874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8301AC4-C673-4ED0-95CA-606D5B057874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8301AC4-C673-4ED0-95CA-606D5B057874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8301AC4-C673-4ED0-95CA-606D5B057874}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7CFF9818-1991-4DA4-99E9-E3DB314C309D} = {D02835D9-CBF1-4B9B-B0DF-0EE26EFB6FCA}
+		{909F8741-3EF3-4CAB-A97F-BDD21A8650F1} = {D02835D9-CBF1-4B9B-B0DF-0EE26EFB6FCA}
+		{B8301AC4-C673-4ED0-95CA-606D5B057874} = {D02835D9-CBF1-4B9B-B0DF-0EE26EFB6FCA}
 	EndGlobalSection
 EndGlobal

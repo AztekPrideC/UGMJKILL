@@ -8,7 +8,8 @@ namespace ugmjkill.Core
 {
     public class CLI
     {
-        public void comando(string [] args)
+        
+        public static void Main(string[] args)
         {
 
             string comando = args[0];
