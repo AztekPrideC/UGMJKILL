@@ -52,7 +52,6 @@ namespace ugmjkill.Core
                 
                     break;
 
-
                 case "newsite":
                 case "-newsite":
                     if (args.Length>1)
@@ -68,8 +67,7 @@ namespace ugmjkill.Core
 
                             default:
                                 
-                                    Console.WriteLine("Se ha creado con exito en la ruta predeterminada");
-                               
+                                    Console.WriteLine("Se ha creado con exito en la ruta predeterminada");                           
                                     Console.WriteLine("esta seguro que desea llamar asi " + "\"" + args[1] + "\"");
                                     string respuesta = Console.ReadLine();
                                     switch (respuesta.ToLower())
@@ -93,7 +91,6 @@ namespace ugmjkill.Core
                         Console.WriteLine("Se ha creado con exito en la ruta predeterminada");
                     }
                     
-
                     break;
 
                 default:
@@ -105,8 +102,7 @@ namespace ugmjkill.Core
                     Console.WriteLine("\"" + argumentoCompleto + "\" no se reoconoce como un comando ejecutable de ugmjkill ");
                     break;
             }
-            
-            
+             
         }
     }
 }
