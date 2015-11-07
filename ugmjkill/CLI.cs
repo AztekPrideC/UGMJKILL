@@ -11,7 +11,6 @@ namespace ugmjkill.Core
         
         public static void Main(string[] args)
         {
-
             string comando = args[0];
             string nombreDeLaPagina = "";
             switch (comando.ToLower())
@@ -28,59 +27,72 @@ namespace ugmjkill.Core
                     Console.WriteLine("         [config] [-password] contraseña del usuario");
                     break;
                 case "config":
-                    switch (args[1])
+                    if (args.Length>1)
                     {
-                        case "-all":
-                        case "all":
-                            Console.WriteLine("Ingrese el nombre de la pagina");
-                            nombreDeLaPagina = Console.ReadLine();
-                            break;
-                        case "-name":
-                            Console.WriteLine("Ingrese el nombre de la pagina");
-                            nombreDeLaPagina = Console.ReadLine();
-                            break;
+                        switch (args[1])
+                        {
+                            case "-all":
+                            case "all":
+                                Console.WriteLine("Ingrese el nombre de la pagina");
+                                nombreDeLaPagina = Console.ReadLine();
+                                break;
+                            case "-name":
+                                Console.WriteLine("Ingrese el nombre de la pagina");
+                                nombreDeLaPagina = Console.ReadLine();
+                                break;
 
-                        default:
-                            break;
+                            default:
+                                break;
+                        }
                     }
+                    else
+                    {
+                        //se agregaran las configuraciones por default
+                    }
+                
                     break;
 
 
                 case "newsite":
                 case "-newsite":
-                    switch (args[1])
+                    if (args.Length>1)
                     {
-                        case "-name":
-                            Console.WriteLine("Ingrese el nombre de la pagina");
-                            nombreDeLaPagina = Console.ReadLine();
-                            Console.WriteLine("Se ha creado con exito en la ruta predeterminada");
-
-                            break;
-
-                        default:
-                            if (args[1] == null)
-                            {
+                        switch (args[1])
+                        {
+                            case "-name":
+                                Console.WriteLine("Ingrese el nombre de la pagina");
+                                nombreDeLaPagina = Console.ReadLine();
                                 Console.WriteLine("Se ha creado con exito en la ruta predeterminada");
-                            }
-                            else
-                            {
-                                Console.WriteLine("esta seguro que desea llamar asi " + "\"" + args[1] + "\"");
-                                string respuesta = Console.ReadLine();
-                                switch (respuesta.ToLower())
-                                {
-                                    case "si":
-                                    case "yes":
-                                        nombreDeLaPagina = args[1];
-                                        Console.WriteLine("Se ha creado con exito en la ruta predeterminada");
-                                        break;
-                                    case "no":
-                                    default:
-                                        Console.WriteLine("Se ha creado con exito en la ruta predeterminada con el nombre por default");
-                                        break;
-                                }
-                            }
-                            break;
+
+                                break;
+
+                            default:
+                                
+                                    Console.WriteLine("Se ha creado con exito en la ruta predeterminada");
+                               
+                                    Console.WriteLine("esta seguro que desea llamar asi " + "\"" + args[1] + "\"");
+                                    string respuesta = Console.ReadLine();
+                                    switch (respuesta.ToLower())
+                                    {
+                                        case "si":
+                                        case "yes":
+                                            nombreDeLaPagina = args[1];
+                                            Console.WriteLine("Se ha creado con exito en la ruta predeterminada");
+                                            break;
+                                        case "no":
+                                        default:
+                                            Console.WriteLine("Se ha creado con exito en la ruta predeterminada con el nombre por default");
+                                            break;
+                                    }
+                                
+                                break;
+                        }
                     }
+                    else
+                    {
+                        Console.WriteLine("Se ha creado con exito en la ruta predeterminada");
+                    }
+                    
 
                     break;
 
