@@ -40,7 +40,12 @@
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\UGMJKill.Core.Lib\UGMJKill.Core.Lib.csproj">
+      <Project>{b8301ac4-c673-4ed0-95ca-606d5b057874}</Project>
+      <Name>UGMJKill.Core.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

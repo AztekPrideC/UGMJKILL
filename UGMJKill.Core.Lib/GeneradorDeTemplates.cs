@@ -8,9 +8,15 @@ namespace UGMJKill.Core.Lib
 {
     class GeneradorDeTemplates
     {
-        public void createTemplate(string div, string[] metacomandos) 
+        public void createTemplate(string etiqueta, string[] metacomandos) 
         {
-            string cuerpo = "<" + div + ">+\r\n</" + div + ">";
+            //ejemplo de header
+            string cuerpo = "<" + etiqueta + ">+\r\n";
+            for (int i = 0; i < metacomandos.Length; i++)
+            {
+                cuerpo += metacomandos[i] + "\r\n";
+            }
+            cuerpo+= "</" + etiqueta + ">";
         }
     }
 }

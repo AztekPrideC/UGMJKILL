@@ -88,6 +88,7 @@ namespace ugmjkill.Core
                     }
                     else
                     {
+                        UGMJKill.Core.Lib.Manager.crearArbol();
                         Console.WriteLine("Se ha creado con exito en la ruta predeterminada");
                     }
                     
